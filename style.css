@@ -1,0 +1,50 @@
+/* Global sozlamalar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+  }
+  
+  /* Main content */
+  .main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .box {
+    flex: 1 1 100%; /* Standart ko'rinish (telefon uchun) */
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border: 1px solid #ddd;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  
+  /* Planshetlar uchun */
+  @media (min-width: 600px) {
+    .box {
+      flex: 1 1 48%; /* Planshet uchun ikki ustun */
+    }
+  }
+  
+  /* Kompyuterlar uchun */
+  @media (min-width: 1024px) {
+    .box {
+      flex: 1 1 30%; /* Katta ekran uchun uch ustun */
+    }
+  }
